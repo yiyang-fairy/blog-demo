@@ -1,0 +1,93 @@
+body {
+    width: 800px;
+    margin: 0 auto;
+    background-color: #ECD2C7;
+    padding: 10px;
+
+}
+Link {
+    text-decoration: none;
+    color:#000;
+}
+.head {
+    
+    display: flex;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    height: 30px;
+    box-shadow: 4px 4px #000 ;
+    background-color: #fff;
+    border: 2px solid #000;
+    padding: 32px;
+    
+}
+.head .left {
+    width: 500px;
+    background-color: #fff;
+    text-decoration: none;
+    color: #000;
+}
+.head .right {
+    width: 300px;
+    display: flex;
+    
+}
+.head  Link {
+    flex: 1;
+    text-decoration: none;
+    color: #000;
+    background-color: #fff;
+   
+}
+.title {
+    margin-bottom: 20px;
+    height: 200px;
+    box-shadow: 4px 4px #000 ;
+    background-color: #fff;
+    border: 2px solid #000;
+    padding: 40px;
+}
+.title div {
+    margin-top: 10px;
+}
+.main {
+    margin-bottom: 20px;
+    height: 1200px;
+    box-shadow: 4px 4px #000 ;
+    background-color: #fff;
+    border: 2px solid #000;
+    padding: 40px;
+}
+.bottom {
+    margin-bottom: 20px;
+    height: 50px;
+    box-shadow: 4px 4px #000 ;
+    background-color: #fff;
+    border: 2px solid #000;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bottom .last {
+    flex: 1;
+}
+.bottom .right {
+    flex:1;
+}
+.red {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 50px;
+    width: 100%;
+    background-color: red;
+}
+.hello {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 50px;
+    width: 50%;
+    background-color: pink;
+}
