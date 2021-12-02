@@ -1,79 +1,97 @@
 body {
-    width: 800px;
-    margin: 0 auto;
-    background-color: #ECD2C7;
-    padding: 10px;
-
+    margin: 0;
+    background-color: #ebcfc4;
+    font-family: Helvetica;
+    color: #202129;
+    font-size: 18px;
+    line-height: 1.25;
 }
-Link {
-    text-decoration: none;
-    color:#000;
+.center {
+    padding: 2rem;
+    max-width: 850px;
+    margin: 0 auto;
 }
 .head {
-    
     display: flex;
-    margin-top: 60px;
-    margin-bottom: 20px;
-    height: 30px;
-    box-shadow: 4px 4px #000 ;
-    background-color: #fff;
-    border: 2px solid #000;
-    padding: 32px;
-    
+    flex-direction: row;
+    -webkit-box-align: center;
+    align-items: center;
+    border: 2px solid black;
+    box-shadow: black 4px 4px;
+    padding: 2rem;
+    background-color: white;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
 }
-.head .left {
-    width: 500px;
-    background-color: #fff;
-    text-decoration: none;
+.head  a {
+    margin-left: 0;
     color: #000;
-}
-.head .right {
-    width: 300px;
-    display: flex;
-    
-}
-.head  Link {
-    flex: 1;
     text-decoration: none;
-    color: #000;
-    background-color: #fff;
    
 }
-.title {
-    margin-bottom: 20px;
-    height: 200px;
-    box-shadow: 4px 4px #000 ;
-    background-color: #fff;
-    border: 2px solid #000;
-    padding: 40px;
+.head a:hover {
+    text-decoration: underline;
 }
-.title div {
-    margin-top: 10px;
+.head a:first-child {
+    flex: 1;
+    font-size: 1.2rem;
+}
+.head a:not(:first-child) {
+    border-left: 2px solid #000;
+    padding: 0.5rem 1rem;
+} 
+.title {
+    border: 2px solid #000;
+    box-shadow: black 4px 4px;
+    padding: 2rem 4rem;
+    background-color: white;
+    margin-bottom: 2rem;
+}
+.title h1 {
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+    font-size: 2em;
+}
+.title p {
+    line-height: 1.5;
+    margin: 0;
 }
 .main {
-    margin-bottom: 20px;
-    height: 1200px;
-    box-shadow: 4px 4px #000 ;
-    background-color: #fff;
     border: 2px solid #000;
-    padding: 40px;
+    box-shadow: black 4px 4px;
+    padding: 2rem 4rem;
+    background-color: white;
+    margin-bottom: 2rem;
+}
+.main h2 {
+    margin-top: 0;
+    padding-bottom: 0.65rem;
+    border-bottom: 2px solid #000;
+    margin-bottom: 2rem;
+}
+.main p {
+    line-height: 1.5;
+}
+.main pre {
+    background-color: black;
 }
 .bottom {
-    margin-bottom: 20px;
-    height: 50px;
-    box-shadow: 4px 4px #000 ;
-    background-color: #fff;
     border: 2px solid #000;
-    padding: 40px;
+    box-shadow: black 4px 4px;
+    padding: 2rem 4rem;
+    background-color: white;
+    margin-bottom: 2rem;
     display: flex;
-    align-items: center;
-    justify-content: center;
 }
-.bottom .last {
+.bottom a {
     flex: 1;
+    text-decoration: none;
+    color: #000;
+    margin-left: 1rem;
+ 
 }
-.bottom .right {
-    flex:1;
+.bottom a:hover {
+    text-decoration: underline;
 }
 .red {
     position: fixed;

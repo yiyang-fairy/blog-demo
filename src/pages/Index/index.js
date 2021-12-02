@@ -1,13 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import './index.css'
-//import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom'
-
-
- //import Games from '../Games'
-// import Ryan from '../Ryan'
-// import Twitter from '../Twitter'
-// import Blog from '../Blog'
 
 const articles = [
     {
@@ -32,23 +24,12 @@ const articles = [
 class Head extends React.Component {
     render() {
         return (
-
-
-            
             <div className = "head">
-                <div className = 'left'>
-                    <Link to = '../Ryan' style={{ textDecoration: 'none' }}> Ryan Kubik</Link>
-                </div>
-                
-            
-               <div className = 'right'>
-                   <Link to = '../Blog' style={{ textDecoration: 'none' }}>Blog</Link>
-                   <Link to = '../Twitter' style={{ textDecoration: 'none' }}>Twitter</Link>
-                   <Link to = '../Games' style={{ textDecoration: 'none' }}>Games</Link>
-               </div>
-
-            </div>
-       
+                <a href="../Ryan">Ryan Kubik</a>
+                <a href="../Blog">Blog</a>
+                <a href="../Twitter">Twitter</a>
+                <a href="../Games">Games</a>
+            </div>       
         )
     }
 }
@@ -57,31 +38,23 @@ class Title extends React.Component {
         return (
             <div className = 'title'>
                 <h1>🎣 useRefState Hook - Access state outside of a component</h1>
-                <div>September 3, 2019</div>
-                <div>13 min read</div>
+                <p>September 3, 2019</p>
+                <p>13 min read</p>
             </div>
         )
     }
 }
-class Bottom extends React.Component {
-    render() {
-        return (
-            <div className = 'bottom'>
-                <div className="last">111</div>
-                <div className ="next">222</div>
-            </div>
-        )
-    }
-}
-
 class Body extends React.Component {
     renderArticles() {
         return articles.map(item => 
         <div key = {item.id}>
-            <h1> {item.title}</h1>
-            <div>{item.content}</div>
-            <div>{item.code}</div>
-            </div>)
+            <h2> {item.title}</h2>
+            <p>{item.content}</p>
+            <pre>{item.code}
+                <div>11</div>
+                <div>111</div>
+            </pre>
+        </div>)
     }
     render() { 
         return (
@@ -91,12 +64,31 @@ class Body extends React.Component {
         )
     }
 }
-console.log(window.screen.height)
-console.log(document.height)
-export default class Index extends React.Component {
+class Bottom extends React.Component {
     render() {
         return (
-            <div>
+            <div className = 'bottom'>
+                <a href="../Games"> ← Showcase Season Retrospective:Wildfire Swap at & XOXO 2019</a>
+                <a href="../Games"> All the Indie Puzzle Games at PAX West 2019 →</a>
+            </div>
+        )
+    }
+}
+export default class Index extends React.Component {
+    // read() {
+    //     let pageHeight = document.body.scrollHeight || document.documentElement.scrollHeight; //页面总高度
+    //     let windowHeight = document.documentElement.clientHeight || document.body.clientHeight; //浏览器视口高度
+    //     let scrollAvail = pageHeight - windowHeight;//可滚动高度
+    //     console.log(pageHeight, windowHeight, scrollAvail)
+    //     window.onscroll = function () {
+    //         let scrollTop = document.documentElement.scrollTop || document.body.scrollTop;  // 获取滚动条的高度
+    //         console.log('滚动条的高度：', scrollTop);
+    //         document.querySelector('.progress').style.width = (scrollTop/scrollAvail)*100 + '%';    // 计算占比
+    //     };
+    // }
+    render() {
+        return (
+            <div className = "center">
                 <div className= "red"></div>
                 <div className="hello">hello</div>
                 <Head></Head>
